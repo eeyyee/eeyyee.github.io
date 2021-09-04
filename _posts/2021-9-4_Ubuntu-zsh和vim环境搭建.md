@@ -1,4 +1,16 @@
 ---
+layout:     post
+title:      Ubuntu zsh 和 vim 自用环境搭建
+subtitle:   Ubuntu自用环境搭
+date:       2021-9-4
+author:     snow
+header-img: https://pic2.zhimg.com/v2-77b1f0ae60ade65252babc452ac0ad71_r.jpg
+catalog: true
+tags:
+    - utils
+---
+
+<!-- ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      Ubuntu zsh 和 vim 自用环境搭建 				# 标题 
 # subtitle:   Hello World, Hello Blog #副标题
@@ -8,7 +20,7 @@ header-img: https://pic2.zhimg.com/v2-77b1f0ae60ade65252babc452ac0ad71_r.jpg 	#�
 catalog: true 						# 是否归档
 tags:								#标签
     - utils
----
+--- -->
 
 [toc]
 
