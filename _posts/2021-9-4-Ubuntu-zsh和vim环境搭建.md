@@ -7,7 +7,7 @@ author:     snow
 header-img: https://pic2.zhimg.com/v2-77b1f0ae60ade65252babc452ac0ad71_r.jpg
 catalog: true
 tags:
-    - utils
+    - Blog utils
 ---
 
 <!-- ---
