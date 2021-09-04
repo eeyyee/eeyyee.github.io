@@ -99,10 +99,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
+        title: "ME",
         href: "http://zhanghao.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
     }
 ]

@@ -10,18 +10,6 @@ tags:
     - Blog utils
 ---
 
-<!-- ---
-layout:     post   				    # 使用的布局（不需要改）
-title:      Ubuntu zsh 和 vim 自用环境搭建 				# 标题 
-# subtitle:   Hello World, Hello Blog #副标题
-date:       2021-9-4			# 时间
-author:     snow 						# 作者
-header-img: https://pic2.zhimg.com/v2-77b1f0ae60ade65252babc452ac0ad71_r.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - utils
---- -->
-
 [toc]
 
 ## zsh 终端环境
