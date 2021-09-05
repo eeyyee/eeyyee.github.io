@@ -91,7 +91,6 @@ sudo ln -s /usr/local/bin/nvim /usr/bin/vim
 
 #### vim 配置文件设置
 1. 下载 vim 配置文件并移动到 `nvim` 配置文件位置  
-
 ```sh
 git clone https://gitee.com/light_snow/vim-relation.git
 
@@ -119,7 +118,6 @@ mv nvim ~/.config/nvim
 [nerd font download page](https://www.nerdfonts.com/font-downloads)
 
 4. 安装 `vim` 插件  
-
 > 注: 在执行操作之前最好设置一下 `git`
 > `git` 默认是 `https` 的下载方式，但是 `https` 经常会下载失败，
 > 所以把 `git` 配置为默认使用 `git` 的下载方式
@@ -151,9 +149,7 @@ sudo apt install silversearcher-ag
 
 3. `neovim` 添加 `python3` 支持  
 ```sh
-# if not install pip3
 sudo apt install python3-pip
-
 pip3 install pynvim
 ```
 
