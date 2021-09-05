@@ -100,7 +100,7 @@ cd vim-relation
 mv nvim ~/.config/nvim
 ```
 
-2. 安装 `vim-plug`
+2. 安装 `vim-plug`  
     - **vim** 环境
         ```sh
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -115,10 +115,10 @@ mv nvim ~/.config/nvim
 [vim-plug github](https://github.com/junegunn/vim-plug)
 
 3. 安装 `nerd font`，支持完整图标显示，下载完成后记得切换 `terminal` 字体
-一般下载 `JetBrainsMono Nerd Font`
+一般下载 `JetBrainsMono Nerd Font`  
 [nerd font download page](https://www.nerdfonts.com/font-downloads)
 
-4. 安装 `vim` 插件
+4. 安装 `vim` 插件  
 
 > 注: 在执行操作之前最好设置一下 `git`
 > `git` 默认是 `https` 的下载方式，但是 `https` 经常会下载失败，
