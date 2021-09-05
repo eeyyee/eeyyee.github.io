@@ -91,6 +91,7 @@ sudo ln -s /usr/local/bin/nvim /usr/bin/vim
 
 #### vim 配置文件设置
 1. 下载 vim 配置文件并移动到 `nvim` 配置文件位置  
+
 ```sh
 git clone https://gitee.com/light_snow/vim-relation.git
 
@@ -156,7 +157,7 @@ sudo apt install python3-pip
 pip3 install pynvim
 ```
 
-4. 安装 `ctags` 和 `gtags`
+4. 安装 `ctags` 和 `gtags`  
 - `ctags`
 ```sh
 sudo apt install exuberant-ctags
