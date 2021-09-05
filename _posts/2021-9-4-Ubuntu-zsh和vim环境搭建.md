@@ -27,6 +27,7 @@ chsh -s /bin/zsh
 #### 安装 `oh-my-zsh`
 `zsh` 安装完毕之后安装 `oh-my-zsh`
 `oh-my-zsh` 有三种安装方式
+
 | Method | Command                                                                                           |
 | ------ | ------------------------------------------------------------------------------------------------- |
 | **curl**   | `sh -c"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  |
@@ -90,6 +91,7 @@ sudo ln -s /usr/local/bin/nvim /usr/bin/vim
 
 #### vim 配置文件设置
 1. 下载 vim 配置文件并移动到 `nvim` 配置文件位置
+
 ```sh
 git clone https://gitee.com/light_snow/vim-relation.git
 
@@ -137,17 +139,18 @@ vim ~/.config/nvim/init.vim
 进行 `init.vim` 文件中已定义插件的安装
 
 ## 补充
-1. 如果安装 `cgdb`，需要安装 `texinfo`
+1. 如果安装 `cgdb`，需要安装 `texinfo`  
 ```sh
 sudo apt install texinfo
 ```
 
-2. 安装 `ag`
+2. 安装 `ag`  
 ```sh
 sudo apt install silversearcher-ag
 ```
 
-3. `neovim` 添加 `python3` 支持
+3. `neovim` 添加 `python3` 支持  
+
 ```sh
 # if not install pip3
 sudo apt install python3-pip
