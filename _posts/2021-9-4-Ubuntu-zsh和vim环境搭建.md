@@ -45,9 +45,9 @@ chsh -s /bin/zsh
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-2. **zsh-syntax-highlighting**
+2. **zsh-autosuggestions**
 ```sh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 3. 可选的 `pokemonsay`
@@ -117,6 +117,8 @@ mv nvim ~/.config/nvim
 3. 安装 `nerd font`，支持完整图标显示，下载完成后记得切换 `terminal` 字体
 一般下载 `JetBrainsMono Nerd Font`  
 [nerd font download page](https://www.nerdfonts.com/font-downloads)
+
+[蓝奏云地址](https://xuezhong.lanzoui.com/inBQEvnhroh)
 
 4. 安装 `vim` 插件  
 > 注: 在执行操作之前最好设置一下 `git`
