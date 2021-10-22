@@ -185,6 +185,7 @@ NodeSource 软件源提供了以下版本：
 - v13.x
 - v12.x - 最新长期版本
 - v10.x - 前一个长期版本
+
 以 `14.x` 为例，
 ```sh
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
