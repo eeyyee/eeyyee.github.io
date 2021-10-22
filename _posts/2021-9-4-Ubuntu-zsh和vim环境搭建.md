@@ -116,7 +116,7 @@ mv nvim ~/.config/nvim
 
 3. 安装 `nerd font`，支持完整图标显示，下载完成后记得切换 `terminal` 字体
 一般下载 `JetBrainsMono Nerd Font`  
-[nerd font download page](https://www.nerdfonts.com/font-downloads)
+[nerd font download page](https://www.nerdfonts.com/font-downloads)  
 [蓝奏云地址](https://xuezhong.lanzoui.com/inBQEvnhroh)
 
 4. 安装 `vim` 插件  
