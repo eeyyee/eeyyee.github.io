@@ -28,9 +28,11 @@ chsh -s /bin/zsh
 `zsh` 安装完毕之后安装 `oh-my-zsh`
 `oh-my-zsh` 有三种安装方式
 
+`oh-my-zsh` github 地址 [omz](https://github.com/ohmyzsh/ohmyzsh)
+
 | Method | Command                                                                                           |
 | ------ | ------------------------------------------------------------------------------------------------- |
-| **curl**   | `sh -c"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  |
+| **curl**   | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  |
 | **wget**   | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch**  | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
@@ -38,16 +40,21 @@ chsh -s /bin/zsh
 
 #### 替换配置文件
 从蓝奏云下载 `zsh` 配置文件替换默认配置文件
-[下载地址](https://xuezhong.lanzoui.com/iDGYhtb2zzc?w)
+[下载地址](https://xuezhong.lanzoue.com/ixk7d0fy71ad)
+
+#### 配置 gitconfig 
+```sh
+git config --global url."https://ghproxy.com/https://github.com/".insteadOf https://github.com/
+```
 
 #### 常用 `oh-my-zsh` 插件
-1. **zsh-syntax-highlighting**
+1. **zsh-syntax-highlighting**  [地址](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-2. **zsh-autosuggestions**
+2. **zsh-autosuggestions**  [地址](https://github.com/zsh-users/zsh-autosuggestions)
 ```sh
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 3. 可选的 `pokemonsay`
@@ -104,12 +111,12 @@ mv nvim ~/.config/nvim
     - **vim** 环境
         ```sh
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         ```
     - `neovim` 环境
         ```sh
         sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
         ```
 其他环境安装请访问 `vim-plug` 主页，
 [vim-plug github](https://github.com/junegunn/vim-plug)
