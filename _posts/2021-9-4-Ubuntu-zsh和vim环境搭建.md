@@ -162,6 +162,18 @@ sudo apt install python3-pip
 pip3 install pynvim
 ```
 
+3.1 pip3 设置源 
+```sh
+mkdir ~/.pip
+vim ~/.pip/pip.conf
+# 内容如下:
+
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+trusted-host = https://pypi.tuna.tsinghua.edu.cn
+```
+
 4. 安装 `ctags` 和 `gtags`  
 - `ctags`
 ```sh
