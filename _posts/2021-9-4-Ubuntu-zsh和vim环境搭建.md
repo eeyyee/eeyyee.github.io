@@ -208,6 +208,11 @@ NodeSource 软件源提供了以下版本：
 ```sh
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 ```
+
+nodejs 设置淘宝源
+```sh
+npm config set registry https://registry.npm.taobao.org
+```
 更多方式请参考： [https://developer.aliyun.com/article/760687](https://developer.aliyun.com/article/760687)
 
 
