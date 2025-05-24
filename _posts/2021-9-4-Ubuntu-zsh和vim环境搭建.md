@@ -2,7 +2,7 @@
 layout:     post
 title:      Ubuntu zsh 和 vim 自用环境搭建
 subtitle:   Ubuntu自用环境搭
-date:       2021-9-4
+date:       2025-05-24
 author:     snow
 header-img: https://pic2.zhimg.com/v2-77b1f0ae60ade65252babc452ac0ad71_r.jpg
 catalog: true
@@ -21,7 +21,6 @@ sudo apt install zsh
 
 # 切换终端到 zsh，此步通常不需要，oh-my-zsh 安装后会提示切换默认终端
 chsh -s /bin/zsh
-
 ```
 
 #### 安装 `oh-my-zsh`
@@ -30,11 +29,20 @@ chsh -s /bin/zsh
 
 `oh-my-zsh` github 地址 [omz](https://github.com/ohmyzsh/ohmyzsh)
 
-| Method | Command                                                                                           |
-| ------ | ------------------------------------------------------------------------------------------------- |
-| **curl**   | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  |
-| **wget**   | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
-| **fetch**  | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| Method    | Command                                                                                           |
+| --------- | ------------------------------------------------------------------------------------------------- |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+
+如果github访问不顺利，可以使用如下命令： 
+
+| Method | Command                                           |
+| ------ | ------------------------------------------------- |
+| curl   | `sh -c "$(curl -fsSL https://install.ohmyz.sh/)"` |
+| wget   | `sh -c "$(wget -O- https://install.ohmyz.sh/)"`   |
+| fetch  | `sh -c "$(fetch -o - https://install.ohmyz.sh/)"` |
+
 
 安装完成之后在提示界面把默认终端切换为 `zsh`
 
@@ -44,7 +52,7 @@ chsh -s /bin/zsh
 
 #### 配置 gitconfig 
 ```sh
-git config --global url."https://ghproxy.com/https://github.com/".insteadOf https://github.com/
+git config --global url."https://ghfast.top/https://github.com/".insteadOf https://github.com/
 ```
 
 #### 常用 `oh-my-zsh` 插件
@@ -127,19 +135,10 @@ mv nvim ~/.config/nvim
 [蓝奏云地址](https://xuezhong.lanzoui.com/inBQEvnhroh)
 
 4. 安装 `vim` 插件  
-> 注: 在执行操作之前最好设置一下 `git`
-> `git` 默认是 `https` 的下载方式，但是 `https` 经常会下载失败，
-> 所以把 `git` 配置为默认使用 `git` 的下载方式
-```sh
-git config --global url."git://github.com".insteadOf https://github.com
-# 上面的应该够用了，还是别把全部的 git 地址都换成 git 比较好，要是没权限就下不了了
-# git config --global url."git://".insteadOf https://
-```
-
 ```sh
 vim ~/.config/nvim/init.vim
 ```
-在打开的 `vim` 界面中，冒号+`PlugInstall`
+然后执行vim指令
 ```sh
 :PlugInstall
 ```
@@ -174,39 +173,12 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
 ```
 
-4. 安装 `ctags` 和 `gtags`  
-- `ctags`
-```sh
-sudo apt install exuberant-ctags
-```
-
-- `gtags`
-    - 依赖环境
-        ```sh
-        sudo apt build-dep global
-        sudo apt install libncurses5-dev libncursesw5-dev
-        ```
-    - 下载 `tar.gz` 包
-    - `wget https://ftp.gnu.org/pub/gnu/global/global-6.6.7.tar.gz`
-    - https://ftp.gnu.org/pub/gnu/global/
-
-    - 编译 & 安装
-        ```sh
-        ./configure --with-sqlite3   # gtags可以使用Sqlite3作为数据库, 可   加可不加
-        make
-        make install # 权限不够的话加 sudo
-        ```
-
-5. nodejs 安装
-nodejs 软件源
-NodeSource 软件源提供了以下版本：
-- v14.x - 最新稳定版
-- v13.x
-- v12.x - 最新长期版本
-- v10.x - 前一个长期版本  
+4. nodejs 安装
+nodejs 软件源，github 地址 https://github.com/nodesource/distributions
 以 `14.x` 为例，
 ```sh
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash - 
+sudo apt-get install -y nodejs
 ```
 
 nodejs 设置淘宝源
